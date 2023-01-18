@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className='headerBody'>
         <div>
-            <img src='headerLogp' />
+        <img src={headerLogp} className="homeImg"></img>
         </div>
     </div>
   )
