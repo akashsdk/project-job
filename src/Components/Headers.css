@@ -1,4 +1,17 @@
 .headerBody{
     height: 80px;
     background-color: #562EFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerBox{
+    height: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+.headerImg{
+    height: 40px;
+    width: 40px;
 }
