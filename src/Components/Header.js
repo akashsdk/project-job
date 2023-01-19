@@ -9,8 +9,11 @@ export default function Header() {
         <img src={headerLogp} className="headerImg" />
         <h1 style={{
             color:'white',
-            marginLeft:'10px'
+            marginLeft:'10px',
         }}>Idea</h1>
+        <div>
+            
+        </div>
       </div>
     </div>
   );
