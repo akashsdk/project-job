@@ -1,26 +1,20 @@
-import React,{ useState } from "react";
+import React, { useState } from "react";
 import "./Headers.css";
 import headerLogp from "../Image/HeaderLogo.png";
+import profileImg from "../Image/profile.png";
 
 export default function Header() {
-    const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <div className="headerBody">
       <div className="headerBox">
         <img src={headerLogp} className="headerImg" />
-        <h1
-          style={{
-            color: "white",
-            marginLeft: "10px",
-          }}
-        >
-          Idea
-        </h1>
+
         <div>
           <div>
             <nav className="navigation">
               <a href="/" className="brand-name">
-                TasnimShahriarAkash
+                <h1>Idea</h1>
               </a>
               <button
                 className="hamburger"
@@ -42,26 +36,42 @@ export default function Header() {
                   />
                 </svg>
               </button>
-              <div
-                className={
-                  isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-                }
-              >
-                <ul>
-                  <li>
-                    <a href="/">Home</a>
-                  </li>
-                  <li>
-                    <a href="/about">About</a>
-                  </li>
-                  <li>
-                    <a href="/contact">Contact</a>
-                  </li>
-                </ul>
+              <div style={{
+                marginTop:'20px',
+                marginLeft:'20%'
+              }}>
+                <div
+                  className={
+                    isNavExpanded
+                      ? "navigation-menu expanded"
+                      : "navigation-menu"
+                  }
+                >
+                  <ul>
+                    <li>
+                      <a href="/">
+                        {" "}
+                        <h3 style={{ color: "#fff" }}>Home</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/about">
+                        <h3 style={{ color: "#fff" }}>About</h3>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/contact">
+                        <h3 style={{ color: "#fff" }}>Work</h3>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </nav>
           </div>
         </div>
+
+        <img src={profileImg} className="headerImg2" />
       </div>
     </div>
   );
