@@ -1,3 +1,12 @@
 .homeBody{
-    background-color: #9F9F9F;
+    height: auto;
+    width: auto;
+    background-color: #E5E5E5;
+}
+.homeBox{
+    height: 500px;
+    width: 60%;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 20%;
 }
