@@ -11,7 +11,7 @@ export default function Home() {
         <h1 style={{color:'#562EFF'}}>Top Player</h1>
             <div>
                 <div>
-
+akas
                 </div>
             </div>
         </div>
